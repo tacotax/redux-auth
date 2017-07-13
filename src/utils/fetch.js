@@ -10,8 +10,8 @@ import {
 } from "./session-storage";
 
 var isApiRequest = function(url) {
-  // return (url.match(getApiUrl(getSessionEndpointKey())));
-  return true
+  return (url.match(getApiUrl(getSessionEndpointKey())));
+  // return true
 };
 
 /**

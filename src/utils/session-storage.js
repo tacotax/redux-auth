@@ -22,10 +22,12 @@ export function getCurrentSettings () {
 }
 
 export function setCurrentEndpoint (e) {
+  console.log('setCurrentEndpoint', e)
   root.authState.currentEndpoint = e;
 }
 
 export function getCurrentEndpoint () {
+  console.log('getCurrentEndpoint')
   return root.authState.currentEndpoint;
 }
 
@@ -157,6 +159,7 @@ export function getPasswordResetRedirectUrl () {
 
 export function getApiUrl(key) {
   let configKey = getSessionEndpointKey(key);
+  console.log('getApiUrl', 'configKey', configKey, 'currentEndpoint', root.authState.currentEndpoint)
   return root.authState.currentEndpoint[configKey].apiUrl;
 }
 
