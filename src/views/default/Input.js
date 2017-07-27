@@ -32,7 +32,7 @@ class AuthInput extends React.Component {
                   position: "absolute",
                   left: 0,
                   top: 0}}>{"✗"}</i>
-                {this.props.label} {err}
+                {err}
               </p>
             );
           })}
