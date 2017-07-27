@@ -25,9 +25,10 @@ class AuthInput extends React.Component {
           {this.props.errors.map((err, i) => {
             return (
               <p className="inline-error-item"
-                 style={{paddingLeft: "20px", position: "relative", marginBottom: "28px"}}
+                 style={{margin: 0, color: 'red'}}
                  key={i}>
                 <i style={{
+                  display: 'none',
                   position: "absolute",
                   left: 0,
                   top: 0}}>{"✗"}</i>
